@@ -20,7 +20,7 @@ var dec = decipher.final('utf8');
 
 // BASIC 認証
 var basicAuth = require('basic-auth-connect');
-app.use(basicAuth('hoge', dec));
+app.use(basicAuth('hoge', 'hogepass'));
 
 
 //decipher.update('94a4b41baacc417b5d5cc7df24bc3891', 'hex', 'utf8');// 第一引数が暗号化されたコード
